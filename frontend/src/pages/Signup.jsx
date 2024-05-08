@@ -15,7 +15,7 @@ function Singup() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8088/api/auth/register", {
+      .post("https://nasa-api-di.vercel.app/register", {
         name,
         email,
         password,

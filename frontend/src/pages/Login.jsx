@@ -13,7 +13,7 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:8088/api/auth/login", {
+      .post("https://nasa-api-di.vercel.app/login", {
         email,
         password,
       })

@@ -17,8 +17,13 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors(
-));
+app.use(
+  cors({
+    origin: ["https://nasa-api-di.vercel.app"],
+    methods: ["POST"],
+    credentials: true,
+  })
+);
 
 app.use(cookieParser());
 
