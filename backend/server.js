@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: [""],
+    origin: ["https://nasa-api-jlyv.vercel.app"],
     methods: ["POST"],
     credentials: true,
   })
