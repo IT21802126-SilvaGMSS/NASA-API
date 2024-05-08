@@ -19,7 +19,7 @@ app.use(express.json());
 
 app.use(
   cors({
-    origin: ["https://nasa-api-di.vercel.app"],
+    origin: [""],
     methods: ["POST"],
     credentials: true,
   })
