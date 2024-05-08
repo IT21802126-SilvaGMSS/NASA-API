@@ -20,10 +20,15 @@ app.use(express.json());
 app.use(
   cors({
     origin: ["https://nasa-api-jlyv.vercel.app"],
-    methods: ["POST"],
+    methods: ["POST","GET"],
     credentials: true,
   })
 );
+
+
+app.get("/", (req,res) => {
+  res.json("Hello")
+})
 
 app.use(cookieParser());
 
