@@ -1,5 +1,3 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/V1F4A3D5)
-
 # AstroNet
 
 AstroNet is a captivating web application built with React.js that allows users to embark on an extraordinary journey through the cosmos. By leveraging the power of NASA's APIs, AstroNet provides an immersive experience, enabling users to explore the wonders of the universe, from the mesmerizing Astronomy Picture of the Day to the awe-inspiring Mars Rover Photos and the breathtaking EPIC (Earth Polychromatic Imaging Camera) images.
