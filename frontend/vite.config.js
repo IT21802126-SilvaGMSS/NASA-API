@@ -11,5 +11,14 @@ export default defineConfig({
     },
     esbuild: {
         jsxInject: `import React from 'react';`
-    }
+    },
+    server: {
+        proxy: {
+            '/api': {
+                target: 'http://localhost:8088', // your backend server URL and port
+                changeOrigin: true,
+                secure: false,
+            },
+        },
+    },
 });

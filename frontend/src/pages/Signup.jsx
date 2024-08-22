@@ -14,16 +14,16 @@ function Singup() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios
-      .post("https://nasa-api-di.vercel.app/register", {
-        name,
-        email,
-        password,
-      })
-      .then((res) => {
-        navigate("/login");
-      })
-      .catch((err) => console.log(err));
+    axios.post("/api/auth/register", {
+      name,
+      email,
+      password,
+    })
+    .then((res) => {
+      navigate("/login");
+    })
+    .catch((err) => console.log(err));
+    
   };
 
   const particlesInit = useCallback(async (engine) => {

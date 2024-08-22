@@ -11,34 +11,16 @@ const authRoutes = require("./routes/authRoutes");
 
 dbConnect();
 
-const currentDir = path.resolve();
 
 const app = express();
 
 app.use(express.json());
 
-app.use(
-  cors({
-    origin: ["https://nasa-api-jlyv.vercel.app"],
-    methods: ["POST","GET"],
-    credentials: true,
-  })
-);
-
-
-app.get("/", (req,res) => {
-  res.json("Hello")
-})
-
 app.use(cookieParser());
 
 app.use("/api/auth", authRoutes);
 
-app.use(express.static(path.join(currentDir, "/frontend/dist")));
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(currentDir, 'frontend', 'dist', 'index.html'));
-});
 
 const PORT = process.env.PORT || 8088;
 
